@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0" />
+<title>聚划算-首页</title>
+<link href="img/log.png" rel="shortcut icon"/>
+<link href="index.css" rel="stylesheet"/>
+<link href="swiper.min.css" rel="stylesheet" />
+<script src="swiper.min.js"></script>
+<script>
+	window.onload=function(){
+		;(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=20*doc.documentElement.clientWidth/320+'px';
+			}
+			change()
+										   
+			win.addEventListener('resize',change,false)
+		})(window,document);
+		var aDiv=document.getElementById('content')
+		//console.log(aDiv)
+		var aLi=aDiv.getElementsByTagName('li');
+		console.log(aLi)
+		for(var i=0; i<aLi.length; i++){
+			aLi[i].addEventListener('touchstart',function(){
+				for(var j=0; j<aLi.length; j++){
+					aLi[j].className='';
+				}
+				this.className='in';
+			},false)
+		}
+		new Swiper('.swiper-container',{
+			
+			prevButton:'.swiper-button-prev',	//上一张
+			nextButton:'.swiper-button-next',	//下一张
+			pagination:'.swiper-pagination', 	//生成小圆点
+			paginationClickable:true,			//小圆点可以点击
+			loop:true,							//无缝
+			autoplay:1000,						//自动播放
+			autoplayDisableOnInteraction:false	//用户操作完，自动播放
+		});
+	}
+</script>
+</head>
+
+<body>
+	<header>
+    	<div class="log"></div>
+        <div class="tittle"></div>
+    </header>
+    <section class="banner swiper-container">
+    	<div class="swiper-wrapper">
+        	<div class="swiper-slide"><img src="img/banner.jpg" alt=""/></div>
+        	<div class="swiper-slide"><img src="img/banner.jpg" alt=""/></div>
+        	<div class="swiper-slide"><img src="img/banner.jpg" alt=""/></div>
+        	<div class="swiper-slide"><img src="img/banner.jpg" alt=""/></div>
+        	<div class="swiper-slide"><img src="img/banner.jpg" alt=""/></div>
+        </div>
+        <div class="swiper-pagination btn"></div>
+    </section>
+    <div class="btn">
+    	<span></span><span></span><span></span><span></span><span class="on"></span>
+    </div>
+    <nav>
+    	<ul class="clearfix">
+        	<li class="fl">
+            	<a href="javascript:;">商品</a>
+            </li>
+            <li class="fl">
+            	<a href="javascript:;">生活</a>
+            </li>
+            <li class="fl">
+            	<a href="javascript:;">品牌</a>
+            </li>
+            <li class="fl list">
+            	<a href="javascript:;">聚宝盆</a>
+            </li>
+            <li class="fl">
+            	<a href="javascript:;">聚名品</a>
+            </li>
+            <li class="fl">
+            	<a href="javascript:;">聚家装</a>
+            </li>
+            <li class="fl">
+            	<a href="javascript:;">聚透</a>
+            </li>
+            <li class="fl list">
+            	<a href="javascript:;">客户端</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content" id="content">
+    	<div class="nav clearfix">
+        	<span class="fl">聚划算热卖排行</span>
+            <span class="fr">TOP10</span>
+        </div>
+		<ul>
+        	<li class="clearfix">
+            	<span class="fl heat heat_1">1</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_1">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_2">2</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_2">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_3">3</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_1">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_4">4</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_2">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_5">5</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_1">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_6">6</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_2">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_7">7</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_1">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_8 sub_2">8</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_9">9</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_1">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+            <li class="clearfix">
+            	<span class="fl heat heat_10">10</span>
+                <img src="img/tu5.png" alt=""/>
+                <div class="fr sub sub_2">
+                	<div class="fl">
+                    	<p>已售 68423</p>
+                        <span>2.3折 ￥<em>299</em></span>
+                    </div>
+                    <i class="fr lcon"></i>
+                    <div class="fr">
+                       	<span>￥ 51</span>
+                    </div>              
+                </div>
+            </li>
+        </ul>
+        <div class="clearfix tap">
+            <div class="nav_1">更多划算 逛起来!</div>
+            <div class="fl back"></div>
+            <ul class="fr box">
+            	<li>服饰</li>
+                <li>配饰</li>
+                <li>美妆</li>
+                <li>服饰</li>
+                <li>配饰</li>
+                <li>美妆</li>
+                <li>服饰</li>
+                <li>配饰</li>
+                <li>美妆</li>
+                <li>服饰</li>
+                <li>配饰</li>
+                <li>美妆</li>
+            </ul>
+        </div>
+        <div class="clearfix tap">
+            <div class="nav_1">精彩商品 逛起来!<span class="nav_2 fr"></span></div>
+            <div class="fl back"></div>
+            <ul class="fr box">
+            	<li>美食</li>
+                <li>教育</li>
+                <li>酒店</li>
+                <li>电影</li>
+                <li>生活品质</li>
+                <li>卡券</li>
+                <li>摄影</li>
+                <li>粮油生鲜</li>
+                <li>门票</li>
+                <li>休闲娱乐</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="clearfix tap">
+            <div class="nav_1">品质生活 逛起来!<span class="nav_2 fr"></span></div>
+            <div class="fl back"></div>
+            <ul class="fr box">
+            	<li>七匹狼</li>
+                <li>粉红女...</li>
+                <li>卓诗尼</li>
+                <li>收纳博士</li>
+                <li>惠氏</li>
+                <li>夏乐</li>
+                <li>帕克论</li>
+                <li>古今</li>
+                <li>九牧</li>
+                <li>诺奥</li>
+                <li>红豆</li>
+                <li>曼秀雷敦</li>
+            </ul>
+        </div> 
+    </div>
+    <div class="content">
+        <div class="clearfix tap">
+            <div class="nav_1">品牌折扣 逛起来!<span class="nav_2 fr"></span></div>
+            <ul class="footer clearfix">
+                <li class="fl foot_1">
+                    <p>ios客户端</p>
+                </li>
+                <li class="fl foot_2">
+                    <p>安卓客户端</p>
+                </li>
+                <li class="fl foot_3">
+                    <p>意见反馈</p>
+                </li>
+           </ul>
+       </div>
+    </div>
+    <ul class="footed clearfix">
+    	<li class="fl fl_1"><a href="javascript:;">登录</a></li>
+        <li class="fl fl_2"><a href="javascript:;">注册</a></li>
+        <li class="fr fl_3"><a href="javascript:;">TOP</a></li>
+    </ul>
+</body>
+</html>
